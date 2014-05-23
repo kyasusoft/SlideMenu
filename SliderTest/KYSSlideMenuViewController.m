@@ -6,9 +6,9 @@
 //  Copyright (c) 2014年 kyasu. All rights reserved.
 //
 
-#import "KYSlideMenuViewController.h"
+#import "KYSSlideMenuViewController.h"
 
-@interface KYSlideMenuViewController () {
+@interface KYSSlideMenuViewController () {
     float _prevPosX;
 }
 
@@ -17,7 +17,7 @@
 
 @end
 
-@implementation KYSlideMenuViewController
+@implementation KYSSlideMenuViewController
 
 - (void)viewDidLoad
 {

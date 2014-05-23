@@ -14,7 +14,7 @@
 		418DD1BF18F2777400FB5CFD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 418DD1BE18F2777400FB5CFD /* main.m */; };
 		418DD1C318F2777400FB5CFD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 418DD1C218F2777400FB5CFD /* AppDelegate.m */; };
 		418DD1C618F2777400FB5CFD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 418DD1C418F2777400FB5CFD /* Main.storyboard */; };
-		418DD1C918F2777400FB5CFD /* KYSlideMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 418DD1C818F2777400FB5CFD /* KYSlideMenuViewController.m */; };
+		418DD1C918F2777400FB5CFD /* KYSSlideMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 418DD1C818F2777400FB5CFD /* KYSSlideMenuViewController.m */; };
 		418DD1CB18F2777500FB5CFD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 418DD1CA18F2777500FB5CFD /* Images.xcassets */; };
 		418DD1D218F2777500FB5CFD /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 418DD1D118F2777500FB5CFD /* XCTest.framework */; };
 		418DD1D318F2777500FB5CFD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 418DD1B218F2777400FB5CFD /* Foundation.framework */; };
@@ -23,7 +23,7 @@
 		418DD1DE18F2777500FB5CFD /* SliderTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 418DD1DD18F2777500FB5CFD /* SliderTestTests.m */; };
 		418DD1E918F281F600FB5CFD /* mainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 418DD1E818F281F600FB5CFD /* mainViewController.m */; };
 		418DD1EC18F2948600FB5CFD /* subViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 418DD1EB18F2948600FB5CFD /* subViewController.m */; };
-		418DD1EF18F2994500FB5CFD /* baseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 418DD1EE18F2994500FB5CFD /* baseTableViewController.m */; };
+		418DD1EF18F2994500FB5CFD /* KYSBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 418DD1EE18F2994500FB5CFD /* KYSBaseTableViewController.m */; };
 		418DD1F218F3E13200FB5CFD /* srdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 418DD1F118F3E13200FB5CFD /* srdViewController.m */; };
 		419D563018F53BE300696C9C /* waveLine.png in Resources */ = {isa = PBXBuildFile; fileRef = 419D562F18F53BE300696C9C /* waveLine.png */; };
 /* End PBXBuildFile section */
@@ -50,8 +50,8 @@
 		418DD1C118F2777400FB5CFD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		418DD1C218F2777400FB5CFD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		418DD1C518F2777400FB5CFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		418DD1C718F2777400FB5CFD /* KYSlideMenuViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = KYSlideMenuViewController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
-		418DD1C818F2777400FB5CFD /* KYSlideMenuViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = KYSlideMenuViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		418DD1C718F2777400FB5CFD /* KYSSlideMenuViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = KYSSlideMenuViewController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		418DD1C818F2777400FB5CFD /* KYSSlideMenuViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = KYSSlideMenuViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		418DD1CA18F2777500FB5CFD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		418DD1D018F2777500FB5CFD /* SlideMenuSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SlideMenuSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		418DD1D118F2777500FB5CFD /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -62,8 +62,8 @@
 		418DD1E818F281F600FB5CFD /* mainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = mainViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		418DD1EA18F2948600FB5CFD /* subViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = subViewController.h; sourceTree = "<group>"; };
 		418DD1EB18F2948600FB5CFD /* subViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = subViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
-		418DD1ED18F2994500FB5CFD /* baseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = baseTableViewController.h; sourceTree = "<group>"; };
-		418DD1EE18F2994500FB5CFD /* baseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = baseTableViewController.m; sourceTree = "<group>"; };
+		418DD1ED18F2994500FB5CFD /* KYSBaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYSBaseTableViewController.h; sourceTree = "<group>"; };
+		418DD1EE18F2994500FB5CFD /* KYSBaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYSBaseTableViewController.m; sourceTree = "<group>"; };
 		418DD1F018F3E13200FB5CFD /* srdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = srdViewController.h; sourceTree = "<group>"; };
 		418DD1F118F3E13200FB5CFD /* srdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = srdViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		419D562F18F53BE300696C9C /* waveLine.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = waveLine.png; path = image/waveLine.png; sourceTree = "<group>"; };
@@ -129,10 +129,10 @@
 				418DD1C118F2777400FB5CFD /* AppDelegate.h */,
 				418DD1C218F2777400FB5CFD /* AppDelegate.m */,
 				418DD1C418F2777400FB5CFD /* Main.storyboard */,
-				418DD1C718F2777400FB5CFD /* KYSlideMenuViewController.h */,
-				418DD1C818F2777400FB5CFD /* KYSlideMenuViewController.m */,
-				418DD1ED18F2994500FB5CFD /* baseTableViewController.h */,
-				418DD1EE18F2994500FB5CFD /* baseTableViewController.m */,
+				418DD1C718F2777400FB5CFD /* KYSSlideMenuViewController.h */,
+				418DD1C818F2777400FB5CFD /* KYSSlideMenuViewController.m */,
+				418DD1ED18F2994500FB5CFD /* KYSBaseTableViewController.h */,
+				418DD1EE18F2994500FB5CFD /* KYSBaseTableViewController.m */,
 				419D563118F5516D00696C9C /* ChildViews */,
 				418DD1CA18F2777500FB5CFD /* Images.xcassets */,
 				418DD1B918F2777400FB5CFD /* Supporting Files */,
@@ -281,9 +281,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				418DD1EF18F2994500FB5CFD /* baseTableViewController.m in Sources */,
+				418DD1EF18F2994500FB5CFD /* KYSBaseTableViewController.m in Sources */,
 				418DD1EC18F2948600FB5CFD /* subViewController.m in Sources */,
-				418DD1C918F2777400FB5CFD /* KYSlideMenuViewController.m in Sources */,
+				418DD1C918F2777400FB5CFD /* KYSSlideMenuViewController.m in Sources */,
 				418DD1C318F2777400FB5CFD /* AppDelegate.m in Sources */,
 				418DD1F218F3E13200FB5CFD /* srdViewController.m in Sources */,
 				418DD1BF18F2777400FB5CFD /* main.m in Sources */,

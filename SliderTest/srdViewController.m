@@ -7,7 +7,7 @@
 //
 
 #import "srdViewController.h"
-#import "KYSlideMenuViewController.h"
+#import "KYSSlideMenuViewController.h"
 
 @interface srdViewController() {
 }
@@ -59,13 +59,13 @@
 //    NSLog(@"%s", __FUNCTION__);
 
     // self -> ナビゲーション -> コンテナ
-    [(KYSlideMenuViewController *)self.parentViewController.parentViewController slideChildTo:KYS_CLOSE];
+    [(KYSSlideMenuViewController *)self.parentViewController.parentViewController slideChildTo:KYS_CLOSE];
 }
 
 - (IBAction)viewSlide:(id)sender
 {
     // self -> ナビゲーション -> コンテナ
-    [(KYSlideMenuViewController *)self.parentViewController.parentViewController slideChildTo:KYS_FLIP];
+    [(KYSSlideMenuViewController *)self.parentViewController.parentViewController slideChildTo:KYS_FLIP];
 }
 
 @end

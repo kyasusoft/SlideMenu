@@ -6,16 +6,16 @@
 //  Copyright (c) 2014年 kyasu. All rights reserved.
 //
 
-#import "baseTableViewController.h"
-#import "KYSlideMenuViewController.h"
+#import "KYSBaseTableViewController.h"
+#import "KYSSlideMenuViewController.h"
 
-@interface baseTableViewController () {
+@interface KYSBaseTableViewController () {
     int   _currentCtrNum;
 }
 
 @end
 
-@implementation baseTableViewController
+@implementation KYSBaseTableViewController
 
 - (void)viewDidLoad
 {
@@ -76,7 +76,7 @@
 
     // 現在のビューコントローラなら表示するだけ
     if (_currentCtrNum == indexPath.row) {
-        [(KYSlideMenuViewController *)self.parentViewController slideChildTo:KYS_CLOSE];
+        [(KYSSlideMenuViewController *)self.parentViewController slideChildTo:KYS_CLOSE];
         return;
     }
     _currentCtrNum = (int)indexPath.row;
@@ -96,7 +96,7 @@
         default:
             return;
     }
-    [(KYSlideMenuViewController *)self.parentViewController changeTo:toCtr];
+    [(KYSSlideMenuViewController *)self.parentViewController changeTo:toCtr];
 }
 
 @end

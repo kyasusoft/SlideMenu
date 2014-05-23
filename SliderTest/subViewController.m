@@ -7,7 +7,7 @@
 //
 
 #import "subViewController.h"
-#import "KYSlideMenuViewController.h"
+#import "KYSSlideMenuViewController.h"
 
 @interface subViewController() {
 }
@@ -59,13 +59,13 @@
 //    NSLog(@"%s", __FUNCTION__);
 
     // self -> コンテナ
-    [(KYSlideMenuViewController *)self.parentViewController slideChildTo:KYS_CLOSE];
+    [(KYSSlideMenuViewController *)self.parentViewController slideChildTo:KYS_CLOSE];
 }
 
 - (IBAction)viewSlide:(id)sender
 {
     // self -> コンテナ
-    [(KYSlideMenuViewController *)self.parentViewController slideChildTo:KYS_FLIP];
+    [(KYSSlideMenuViewController *)self.parentViewController slideChildTo:KYS_FLIP];
 }
 
 @end

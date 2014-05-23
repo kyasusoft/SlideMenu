@@ -13,7 +13,7 @@
 #define KYS_OPEN  1
 #define KYS_CLOSE 2
 
-@interface KYSlideMenuViewController : UIViewController
+@interface KYSSlideMenuViewController : UIViewController
 
 @property (weak, nonatomic) IBOutlet UIView *containerView;
 
